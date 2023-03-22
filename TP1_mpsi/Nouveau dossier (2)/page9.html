@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Liste des Workshops</title>
+	<link rel="stylesheet" type="text/css" href="page9.css">
+</head>
+<body>
+	<h1>Liste des Workshops</h1>
+	<ul id="workshops-list"></ul>
+	<button id="create-workshop-btn">Créer un workshop</button>
+	<div id="create-workshop-modal" class="modal">
+		<div class="modal-content">
+			<span class="close">&times;</span>
+			<h2>Créer un workshop</h2>
+			<form>
+				<label for="workshop-name">Nom du workshop :</label>
+				<input type="text" id="workshop-name" name="workshop-name" required>
+				<label for="workshop-date">Date du workshop :</label>
+				<input type="date" id="workshop-date" name="workshop-date" required>
+				<input type="button" value="Créer" onclick="createWorkshop()">
+			</form>
+		</div>
+	</div>
+	<script src="page8.js"></script>
+</body>
+</html>
